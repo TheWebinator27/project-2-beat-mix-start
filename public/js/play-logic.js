@@ -365,3 +365,24 @@ $(() => {
     }
   });
 });
+
+
+document.getElementById('initiateOiaUia').addEventListener('click', () => {
+  const body = document.body;
+  const button = document.getElementById('initiateOiaUia'); // Get the button element
+
+  // Play audio
+  const audio = new Audio('public/audio/oiia_spinning_cat_meme.mp3');
+  audio.play();
+
+  // Set background image and trigger transition
+  body.style.backgroundImage = "url('/public/img/dancing-cats.gif')"; 
+  body.offsetWidth; // Force reflow
+  body.style.transition = 'background-image 3s ease-in-out'; 
+
+  // Change button text
+  button.innerText = 'Oia Uia Cat Mode Initiated 😎'; 
+
+  // Change button background image
+  button.style.backgroundImage = "url('/public/img/dancing-cats.gif')";
+});

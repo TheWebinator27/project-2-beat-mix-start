@@ -2,14 +2,30 @@ body {
   background-color: #16191D;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+
+  background-image: url('');
+  background-repeat: norepeat;
+  background-size: cover;
+
+  z-index: 20;
+}
+
+h1{
+  font-size: 38px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fff;
 }
 
 #logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 70px;
-  background-color: #fff;
+  height: 80px;
+  background-color: #35c7f4;
+}
+
+#logo img{
+  height: 100%;
 }
 
 #app-container {
@@ -99,20 +115,23 @@ body {
   background-color: #35c7f4;
 }
 
-#clear-all {
+#clear-all, #initiateOiaUia {
   width: 149px;
-	height: 43px;
-	background-color: #ff115c;
+	height: 55px;
+	background-color: #35c7f4;
 	font-size: 15px;
 	letter-spacing: 0.9px;
 	text-align: center;
-  color: #16191d;
+  color: #fff;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 6px;
   cursor: pointer;
+
+  padding: 8px;
+  background-position: center;
 }
 
 #clear-all.clicked {
